@@ -1,2 +1,6 @@
 Library/bin/
 Library/obj/
+Tests/FableAssertEquality.Tests/obj/
+Tests/FableAssertEquality.Tests/bin/
+Tests/FableAssertEquality.Tests/build/
+Tests/FableAssertEquality.Tests/node_modules/
