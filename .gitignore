@@ -1,5 +1,12 @@
 Library/bin/
 Library/obj/
+
+Tests/FableMapExperiments.Tests/obj/
+Tests/FableMapExperiments.Tests/bin/
+Tests/FableMapExperiments.Tests/build/
+Tests/FableMapExperiments.Tests/node_modules/
+
+
 Tests/FableAssertEquality.Tests/obj/
 Tests/FableAssertEquality.Tests/bin/
 Tests/FableAssertEquality.Tests/build/
