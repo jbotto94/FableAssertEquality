@@ -17,12 +17,15 @@ module Testing
 
     let private equalO expected actual: unit = import "EqualObj" "./ObjCompare.js"
     let private deepE expected actual: unit = import "DeepEq" "./DeepEqual.js"
+    let private nEq expected actual: bool = import "nEqual" "./nEquals.js"
 
     let equalObj expected actual: unit = equalO expected actual
     let deepEqual expected actual: unit = deepE expected actual
     let fsEq expected actual: unit = equal (expected = actual) true
+    let nEqual expected actual: unit = equal (nEq expected actual) true
 
 
+    
     //Code required to run the tests
     let [<Global>] describe (name: string) (f: unit->unit) = jsNative
     let [<Global>] it (msg: string) (f: unit->unit) = jsNative

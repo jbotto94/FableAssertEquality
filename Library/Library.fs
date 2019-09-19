@@ -12,6 +12,8 @@ module Map =
             | Some vy -> yield (k, f.Invoke (vx, vy))
             | None    -> () }
 
+    let keys   (source: Map<_,_>) = Seq.map (fun (KeyValue(k, _)) -> k) source
+
     let unionWith combiner (source1: Map<'Key, 'Value>) (source2: Map<'Key, 'Value>) =
         Map.fold (fun m k v' -> Map.add k (match Map.tryFind k m with Some v -> combiner v v' | None -> v') m) source1 source2
 
